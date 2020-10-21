@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <a href="https://dbtvault.readthedocs.io/en/latest/?badge=stable"><img
+  <a href="https://dbtvault.readthedocs.io/en/stable/?badge=stable"><img
     src="https://readthedocs.org/projects/dbtvault/badge/?version=stable" 
     alt="Documentation Status"
   /></a>
@@ -11,7 +11,9 @@
     src="https://img.shields.io/badge/Slack-Join-yellow?style=flat&logo=slack" 
     alt="Join our slack"
   /></a>
+ 
 </p>
+
 
 [Changelog and past doc versions](https://dbtvault.readthedocs.io/en/latest/changelog/stable)
 
@@ -42,20 +44,8 @@ Learn quickly with our worked example:
 
 ## Installation
 
-Add the following to your `packages.yml`
-
-
-```yaml
-packages:
-
-  - git: "https://github.com/Datavault-UK/dbtvault"
-    revision: v0.6.2 # Latest stable version
-```
-
-And run 
-`dbt deps`
-
-[Read more on package installation](https://docs.getdbt.com/docs/building-a-dbt-project/package-management/#git-packages)
+Check [dbt Hub](https://hub.getdbt.com/datavault-uk/dbtvault/latest/) for the latest installation instructions, 
+or [read the docs](https://docs.getdbt.com/docs/building-a-dbt-project/package-management/) for more information on installing packages.
 
 ## Usage
 
