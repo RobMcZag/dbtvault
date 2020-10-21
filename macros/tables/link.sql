@@ -64,7 +64,7 @@ STG AS (
             UNION ALL
             {%- endif %}
             {%- endfor %}
-        )
+        ) as all_sources
         {{ 'WHERE ' -}}
         {%- for fk in fk_cols -%}
         {{ fk }} IS NOT NULL
