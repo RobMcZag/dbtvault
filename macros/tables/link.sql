@@ -6,6 +6,10 @@
 
 {%- endmacro -%}
 
+{%- macro postgres__link(src_pk, src_fk, src_ldts, src_source, source_model) -%}
+    {{ dbtvault.snowflake__link(src_pk, src_fk, src_ldts, src_source, source_model) }}
+{%- endmacro -%}
+
 {%- macro snowflake__link(src_pk, src_fk, src_ldts, src_source, source_model) -%}
 
 {%- set source_cols = dbtvault.expand_column_list(columns=[src_pk, src_fk, src_ldts, src_source]) -%}

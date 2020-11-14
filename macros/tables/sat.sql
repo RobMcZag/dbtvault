@@ -6,6 +6,10 @@
 
 {%- endmacro %}
 
+{%- macro postgres__sat(src_pk, src_hashdiff, src_payload, src_eff, src_ldts, src_source, source_model) -%}
+{{ dbtvault.snowflake__sat(src_pk, src_hashdiff, src_payload, src_eff, src_ldts, src_source, source_model) }}
+{%- endmacro -%}
+
 {%- macro snowflake__sat(src_pk, src_hashdiff, src_payload, src_eff, src_ldts, src_source, source_model) -%}
 
 {%- set source_cols = dbtvault.expand_column_list(columns=[src_pk, src_hashdiff, src_payload, src_eff, src_ldts, src_source]) -%}

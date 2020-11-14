@@ -4,6 +4,10 @@
 
 {%- endmacro -%}
 
+{%- macro postgres__prefix(columns=none, prefix_str=none, alias_target='source') -%}
+    {{ dbtvault.snowflake__prefix(columns, prefix_str, alias_target) }}
+{%- endmacro -%}
+
 {%- macro snowflake__prefix(columns=none, prefix_str=none, alias_target='source') -%}
 
     {%- if columns and prefix_str -%}

@@ -7,6 +7,9 @@
     {{- adapter.dispatch('hash', packages = ['dbtvault'])(columns=columns, alias=alias, is_hashdiff=is_hashdiff) -}}
 
 {%- endmacro %}
+{%- macro postgres__hash(columns, alias, is_hashdiff) -%}
+    {{ dbtvault.snowflake__hash(columns, alias, is_hashdiff) }}
+{%- endmacro %}
 
 {%- macro snowflake__hash(columns, alias, is_hashdiff) -%}
 
